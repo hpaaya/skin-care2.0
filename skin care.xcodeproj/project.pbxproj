@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43000F8921E4BBFA0074A6FE /* favoriteListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43000F8821E4BBFA0074A6FE /* favoriteListTableViewController.swift */; };
+		43000F8D21E4C3FC0074A6FE /* productList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43000F8C21E4C3FC0074A6FE /* productList.swift */; };
+		43000F8F21E4CC070074A6FE /* favoriteProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43000F8E21E4CC070074A6FE /* favoriteProductTableViewCell.swift */; };
+		43454C9021DDEA3900500E42 /* productSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43454C8F21DDEA3900500E42 /* productSelectViewController.swift */; };
+		43454C9221DDED5700500E42 /* skinTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43454C9121DDED5700500E42 /* skinTypeViewController.swift */; };
+		43454C9421DDF80A00500E42 /* productTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43454C9321DDF80A00500E42 /* productTableViewController.swift */; };
+		43454C9621DDFCB700500E42 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43454C9521DDFCB700500E42 /* Product.swift */; };
+		43454C9821DE05A400500E42 /* productTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43454C9721DE05A400500E42 /* productTableViewCell.swift */; };
+		4369C4BA21DF633500A64A41 /* productDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369C4B921DF633500A64A41 /* productDetialViewController.swift */; };
+		4369C4BC21DF850600A64A41 /* storeMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369C4BB21DF850600A64A41 /* storeMapViewController.swift */; };
+		43BB0BAE21E60A0800D64038 /* cosmeticBrandSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB0BAD21E60A0800D64038 /* cosmeticBrandSelectViewController.swift */; };
+		43BB0BB021E60BAA00D64038 /* cosmeticTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB0BAF21E60BAA00D64038 /* cosmeticTypeViewController.swift */; };
+		43BB0BB221E60EA900D64038 /* cosmeticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB0BB121E60EA900D64038 /* cosmeticTableViewController.swift */; };
+		43BB0BB421E6109D00D64038 /* cosmeticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB0BB321E6109D00D64038 /* cosmeticTableViewCell.swift */; };
+		43BB0BB621E6116D00D64038 /* cosmeticResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB0BB521E6116D00D64038 /* cosmeticResult.swift */; };
+		43BB0BB821E6136600D64038 /* cosmeticDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB0BB721E6136600D64038 /* cosmeticDetialViewController.swift */; };
 		43BF43DE21DCCF7600AE25BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF43DD21DCCF7600AE25BF /* AppDelegate.swift */; };
 		43BF43E021DCCF7600AE25BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF43DF21DCCF7600AE25BF /* ViewController.swift */; };
 		43BF43E321DCCF7600AE25BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BF43E121DCCF7600AE25BF /* Main.storyboard */; };
@@ -15,6 +31,8 @@
 		43BF43EB21DCCF7800AE25BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BF43E921DCCF7800AE25BF /* LaunchScreen.storyboard */; };
 		43BF43F621DCCF7800AE25BF /* skin_careTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF43F521DCCF7800AE25BF /* skin_careTests.swift */; };
 		43BF440121DCCF7800AE25BF /* skin_careUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF440021DCCF7800AE25BF /* skin_careUITests.swift */; };
+		43BF440F21DCD7FE00AE25BF /* Qna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF440E21DCD7FE00AE25BF /* Qna.swift */; };
+		43BF441121DCDAE400AE25BF /* quizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF441021DCDAE400AE25BF /* quizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43000F8821E4BBFA0074A6FE /* favoriteListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteListTableViewController.swift; sourceTree = "<group>"; };
+		43000F8C21E4C3FC0074A6FE /* productList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = productList.swift; path = ../productList.swift; sourceTree = "<group>"; };
+		43000F8E21E4CC070074A6FE /* favoriteProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteProductTableViewCell.swift; sourceTree = "<group>"; };
+		43454C8F21DDEA3900500E42 /* productSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productSelectViewController.swift; sourceTree = "<group>"; };
+		43454C9121DDED5700500E42 /* skinTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skinTypeViewController.swift; sourceTree = "<group>"; };
+		43454C9321DDF80A00500E42 /* productTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productTableViewController.swift; sourceTree = "<group>"; };
+		43454C9521DDFCB700500E42 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		43454C9721DE05A400500E42 /* productTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productTableViewCell.swift; sourceTree = "<group>"; };
+		4369C4B921DF633500A64A41 /* productDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetialViewController.swift; sourceTree = "<group>"; };
+		4369C4BB21DF850600A64A41 /* storeMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storeMapViewController.swift; sourceTree = "<group>"; };
+		43BB0BAD21E60A0800D64038 /* cosmeticBrandSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosmeticBrandSelectViewController.swift; sourceTree = "<group>"; };
+		43BB0BAF21E60BAA00D64038 /* cosmeticTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosmeticTypeViewController.swift; sourceTree = "<group>"; };
+		43BB0BB121E60EA900D64038 /* cosmeticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosmeticTableViewController.swift; sourceTree = "<group>"; };
+		43BB0BB321E6109D00D64038 /* cosmeticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosmeticTableViewCell.swift; sourceTree = "<group>"; };
+		43BB0BB521E6116D00D64038 /* cosmeticResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosmeticResult.swift; sourceTree = "<group>"; };
+		43BB0BB721E6136600D64038 /* cosmeticDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cosmeticDetialViewController.swift; sourceTree = "<group>"; };
 		43BF43DA21DCCF7600AE25BF /* skin care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skin care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BF43DD21DCCF7600AE25BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43BF43DF21DCCF7600AE25BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +83,8 @@
 		43BF43FC21DCCF7800AE25BF /* skin careUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skin careUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BF440021DCCF7800AE25BF /* skin_careUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skin_careUITests.swift; sourceTree = "<group>"; };
 		43BF440221DCCF7800AE25BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BF440E21DCD7FE00AE25BF /* Qna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qna.swift; sourceTree = "<group>"; };
+		43BF441021DCDAE400AE25BF /* quizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +138,24 @@
 				43BF43DD21DCCF7600AE25BF /* AppDelegate.swift */,
 				43BF43DF21DCCF7600AE25BF /* ViewController.swift */,
 				43BF43E121DCCF7600AE25BF /* Main.storyboard */,
+				43BB0BB721E6136600D64038 /* cosmeticDetialViewController.swift */,
+				43BB0BB521E6116D00D64038 /* cosmeticResult.swift */,
+				43BB0BB321E6109D00D64038 /* cosmeticTableViewCell.swift */,
+				43BB0BAF21E60BAA00D64038 /* cosmeticTypeViewController.swift */,
+				43BB0BB121E60EA900D64038 /* cosmeticTableViewController.swift */,
+				43BB0BAD21E60A0800D64038 /* cosmeticBrandSelectViewController.swift */,
+				43000F8E21E4CC070074A6FE /* favoriteProductTableViewCell.swift */,
+				43000F8821E4BBFA0074A6FE /* favoriteListTableViewController.swift */,
+				4369C4B921DF633500A64A41 /* productDetialViewController.swift */,
+				43000F8C21E4C3FC0074A6FE /* productList.swift */,
+				43454C9721DE05A400500E42 /* productTableViewCell.swift */,
+				4369C4BB21DF850600A64A41 /* storeMapViewController.swift */,
+				43454C9521DDFCB700500E42 /* Product.swift */,
+				43454C9321DDF80A00500E42 /* productTableViewController.swift */,
+				43454C9121DDED5700500E42 /* skinTypeViewController.swift */,
+				43454C8F21DDEA3900500E42 /* productSelectViewController.swift */,
+				43BF441021DCDAE400AE25BF /* quizViewController.swift */,
+				43BF440E21DCD7FE00AE25BF /* Qna.swift */,
 				43BF43E721DCCF7800AE25BF /* Assets.xcassets */,
 				43BF43E921DCCF7800AE25BF /* LaunchScreen.storyboard */,
 				43BF43EC21DCCF7800AE25BF /* Info.plist */,
@@ -259,9 +313,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BF440F21DCD7FE00AE25BF /* Qna.swift in Sources */,
+				4369C4BC21DF850600A64A41 /* storeMapViewController.swift in Sources */,
 				43BF43E021DCCF7600AE25BF /* ViewController.swift in Sources */,
+				43454C9621DDFCB700500E42 /* Product.swift in Sources */,
+				43BB0BB821E6136600D64038 /* cosmeticDetialViewController.swift in Sources */,
+				43BB0BB421E6109D00D64038 /* cosmeticTableViewCell.swift in Sources */,
+				43BB0BB621E6116D00D64038 /* cosmeticResult.swift in Sources */,
+				43BB0BB021E60BAA00D64038 /* cosmeticTypeViewController.swift in Sources */,
 				43BF43DE21DCCF7600AE25BF /* AppDelegate.swift in Sources */,
+				43BB0BB221E60EA900D64038 /* cosmeticTableViewController.swift in Sources */,
+				43000F8F21E4CC070074A6FE /* favoriteProductTableViewCell.swift in Sources */,
+				43454C9021DDEA3900500E42 /* productSelectViewController.swift in Sources */,
+				43000F8921E4BBFA0074A6FE /* favoriteListTableViewController.swift in Sources */,
+				4369C4BA21DF633500A64A41 /* productDetialViewController.swift in Sources */,
+				43454C9221DDED5700500E42 /* skinTypeViewController.swift in Sources */,
 				43BF43E621DCCF7600AE25BF /* skin_care.xcdatamodeld in Sources */,
+				43454C9821DE05A400500E42 /* productTableViewCell.swift in Sources */,
+				43454C9421DDF80A00500E42 /* productTableViewController.swift in Sources */,
+				43BF441121DCDAE400AE25BF /* quizViewController.swift in Sources */,
+				43000F8D21E4C3FC0074A6FE /* productList.swift in Sources */,
+				43BB0BAE21E60A0800D64038 /* cosmeticBrandSelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
