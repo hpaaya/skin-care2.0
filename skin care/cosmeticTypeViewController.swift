@@ -10,17 +10,12 @@ import UIKit
 
 class cosmeticTypeViewController: UIViewController {
     
-    var brand: String?
-    var cosmeticTypeEnglish = ["blush","eyeliner","eyeshadow","lipstick","mascara"]
+    //var brand: String?
+    var cosmeticTypeEnglish = ["nail+polish","eyeliner","eyeshadow","lipstick","mascara"]
     var cosmeticType = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let brand = brand{
-            self.brand = brand
-        }
-        
     }
     
     @IBAction func buttonPress(_ sender: UIButton) {
@@ -49,7 +44,7 @@ class cosmeticTypeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as? cosmeticTableViewController
-        controller?.brand = brand
+        //controller?.brand = brand
         controller?.cosmeticType = cosmeticType
     }
 

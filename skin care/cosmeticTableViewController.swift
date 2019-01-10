@@ -10,32 +10,44 @@ import UIKit
 
 class cosmeticTableViewController: UITableViewController {
     
-    var brand: String?
+    //var brand: String?
     var cosmeticType: String?
     
-    var cosmetics = [Cosmetic]()
+    struct Cosmetic: Codable{
+        var hits: [a]
+    }
+    
+    struct a:Codable{
+        var previewURL: URL
+        var tags: String
+    }
+    
+    var cosmetics = [a]()
+    
+    //var a = Cosmetic(name:"ddf", image_link: "sss", description: "dddd")
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var urlStr = "https://makeup-api.herokuapp.com/api/v1/products.json?brand="
-        if let brand = brand{
-            urlStr = urlStr + brand + "&product_type="
+        //cosmetics.append(a)
+        
+        var urlStr1 = "https://pixabay.com/api/?key=11234819-722f31397427d1d6054d5cc9b&q="
             if let cosmeticType = cosmeticType{
-                urlStr = urlStr + cosmeticType
+                urlStr1 = urlStr1 + cosmeticType + "&image_type=photo"
             }
-        }
-        print(urlStr)
-        //urlStr = "https://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick"
-        if let urlStr = "https://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let url = URL(string: urlStr) {
+        
+        print(urlStr1)
+        if let urlStr = urlStr1.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed), let url = URL(string: urlStr) {
             
             let task = URLSession.shared.dataTask(with: url) { (data, response , error) in
                 let decoder = JSONDecoder()
-                if let data = data, let CosmeticResults = try? decoder.decode(CosmeticResults.self, from: data) {
-                    print(data)
-                    print(CosmeticResults)
-                    self.cosmetics = CosmeticResults.result
+                print("987655")
+                //print("dddd",CosmeticResults.self)
+                if let data = data, let Cosmetic = try? decoder.decode(Cosmetic.self, from: data) {
+                    print("123",data)
+                    //print(CosmeticResults)
+                    self.cosmetics = Cosmetic.hits
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
@@ -43,9 +55,8 @@ class cosmeticTableViewController: UITableViewController {
                 }
             }
             task.resume()
-            
         }
-        print(self.cosmetics)
+        //print(self.cosmetics)
     }
 
     // MARK: - Table view data source
@@ -60,9 +71,9 @@ class cosmeticTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cosmeticCell", for: indexPath) as! cosmeticTableViewCell
 
         let cosmetic = cosmetics[indexPath.row]
-        cell.nameLabel.text = cosmetic.name
+        cell.nameLabel.text = cosmetic.tags
         
-        let task = URLSession.shared.dataTask(with: cosmetic.imageURL) { (data, response , error) in
+        let task = URLSession.shared.dataTask(with: cosmetic.previewURL) { (data, response , error) in
             if let data = data {
                 DispatchQueue.main.async {
                     cell.photoImage.image = UIImage(data: data)
@@ -114,6 +125,7 @@ class cosmeticTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
@@ -121,10 +133,12 @@ class cosmeticTableViewController: UITableViewController {
         let controller = segue.destination as? cosmeticDetialViewController
         if let row = tableView.indexPathForSelectedRow?.row{
             let cosmetic = cosmetics[row]
-            controller?.cosmetic = cosmetic
+            controller?.cosmeticTag = cosmetic.tags
+            let string = try? String(contentsOf: cosmetic.previewURL)
+            controller?.cosmeticURL = string
         }
         
     }
-    
+    */
 
 }

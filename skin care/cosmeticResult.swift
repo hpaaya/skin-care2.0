@@ -10,7 +10,7 @@ import Foundation
 
 struct Cosmetic: Codable{
     var name: String
-    var imageURL: URL
+    var image_link: String
     var description: String
 }
 
